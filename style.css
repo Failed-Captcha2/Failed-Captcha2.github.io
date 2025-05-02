@@ -1,3 +1,48 @@
-button{
-    background-color: red;
+
+.large_image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-style:dashed;
+    border-color:rgb(230, 237, 244);;
+}
+
+p{
+    -webkit-text-fill-color: rgb(16, 16, 28);
+}
+
+.top_bar{
+    padding: 10px;
+    background-color: white;
+    margin: 0px;
+}
+
+
+.img_text_container{
+    display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px;
+}
+
+.text{
+    background-color: rgb(230, 237, 244);
+    height: 300px;
+    border-style:solid;
+    border-color: white;
+}
+
+.text>* {
+    margin: 10px;
+}
+
+body{
+    background-color:rgb(173, 185, 199);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
