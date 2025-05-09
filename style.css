@@ -1,23 +1,56 @@
 
 .large_image {
-    width: 300px;
-    height: 300px;
+    height: 100vh;
+    width: 400px;
     object-fit: cover;
     object-position: center;
-    border-style:dashed;
-    border-color:rgb(230, 237, 244);;
 }
 
 p{
-    -webkit-text-fill-color: rgb(16, 16, 28);
+    -webkit-text-fill-color: rgb(34,
+        13,
+        46);
+        font-size: 1rem;
 }
 
 .top_bar{
+    text-align: right;
     padding: 10px;
-    background-color: white;
     margin: 0px;
+    background-color: rgb(30, 23, 31);
+    -webkit-text-fill-color: rgb(250, 255, 240);
 }
 
+.link{
+    -webkit-text-fill-color: rgb(102, 152, 71);
+        font-weight:bold;
+        text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    background:none;
+    font-weight: bold;
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-color:rgb(65, 34, 96);
+}
+
+h1{
+    font-size: 8rem;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    -webkit-text-fill-color: rgb(90, 134, 62);
+}
+
+.vertical-line{
+    width: 5px;
+    height: 350px;
+    background-color: rgb(30,23,31);
+}
 
 .img_text_container{
     display: flex;
@@ -27,10 +60,11 @@ p{
 }
 
 .text{
-    background-color: rgb(230, 237, 244);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     height: 300px;
-    border-style:solid;
-    border-color: white;
+    
 }
 
 .text>* {
@@ -38,7 +72,7 @@ p{
 }
 
 body{
-    background-color:rgb(173, 185, 199);
+    background-color: rgb(251, 255, 240);
 }
 
 html,
