@@ -6,11 +6,16 @@
     object-position: center;
 }
 
+.project_img{
+    margin: 10px;
+    width: 95vw;
+    align-items: center;
+
+}
+
 p{
-    -webkit-text-fill-color: rgb(30,
-        23,
-        31);
-        font-size: 1rem;
+    -webkit-text-fill-color: rgb(30,23,31);
+    font-size: 1rem;
 }
 
 .top_bar{
@@ -25,6 +30,7 @@ p{
     -webkit-text-fill-color: rgb(102, 152, 71);
         font-weight:bold;
         text-decoration: underline;
+        display: inline-block;
 }
 
 a{
@@ -72,6 +78,7 @@ h1{
 }
 
 body{
+    color: rgb(30, 23, 31);
     background-color: rgb(251, 255, 240);
 }
 
