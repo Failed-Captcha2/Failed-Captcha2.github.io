@@ -6,6 +6,10 @@
     object-position: center;
 }
 
+.small_img{
+    width: 95%;
+}
+
 .project_img{
     margin: 10px;
     width: 95vw;
@@ -76,6 +80,13 @@ h1{
 .text>* {
     margin: 10px;
 }
+
+h3{
+    font-size:large;
+    -webkit-text-fill-color: rgb(185, 31, 31);
+
+}
+
 
 body{
     color: rgb(30, 23, 31);
