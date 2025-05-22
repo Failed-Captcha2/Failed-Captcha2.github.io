@@ -53,13 +53,27 @@ h1{
     font-size: 8rem;
         font-weight: bold;
         margin-bottom: 0.5em;
-    -webkit-text-fill-color: rgb(90, 134, 62);
+    -webkit-text-fill-color: rgb(131, 190, 99);
 }
+
+#text-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #1e171f;
+    color: #333;
+    padding: 1rem;
+    overflow-x: auto; /* Enables horizontal scroll if needed */
+    white-space: pre-wrap; /* Wrap long lines */
+    max-height: 400px; /* Optional: add scroll if long */ 
+    -webkit-text-fill-color: rgb(115, 153, 92);
+
+}
+
 
 .vertical-line{
     width: 5px;
     height: 350px;
-    background-color: rgb(30,23,31);
+    background-color: #1e171f;
 }
 
 .img_text_container{
