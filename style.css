@@ -8,6 +8,7 @@
 
 .small_img{
     width: 95%;
+    max-width: 400px;
 }
 
 .project_img{
