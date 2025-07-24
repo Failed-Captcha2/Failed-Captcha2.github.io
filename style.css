@@ -1,9 +1,24 @@
+:root{
+    --brown1: #331B00;
+    --brown2: #66462C;
+    --brown3: #726953;
+    --green: #B5CFBF;
+    --blue: #82A6B1;
+}
+
 
 .large_image {
-    height: 100vh;
+    height: 90vh;
     width: 400px;
     object-fit: cover;
     object-position: center;
+    border-radius: 50px;
+    border-right-color: var(--green);
+    border-bottom-color:var(--green);
+    border-top-color:var(--brown1);
+    border-left-color:var(--brown1);
+    border-style:solid;
+    border-width:5px;
 }
 
 .small_img{
@@ -24,15 +39,22 @@ p{
 }
 
 .top_bar{
-    text-align: right;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: 0px;
-    background-color: rgb(30, 23, 31);
+    background-color: var(--brown1);
     -webkit-text-fill-color: rgb(250, 255, 240);
 }
 
+.tabs{
+    float: right;
+    text-align: right;
+
+}
+
 .link{
-    -webkit-text-fill-color: rgb(102, 152, 71);
+    -webkit-text-fill-color: var(--green);
         font-weight:bold;
         text-decoration: underline;
         display: inline-block;
@@ -42,19 +64,42 @@ a{
     text-decoration: none;
 }
 button{
-    background:none;
+    background-color: var(--brown1);
+    padding-top: 5px;
+    border:solid;
+    border-color: var(--brown3);
+    border-bottom-color: var(--brown1);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-width: 5px;
     font-weight: bold;
-    border-style:solid;
-    border-top:none;
-    border-bottom:none;
-    border-color:rgb(65, 34, 96);
+    -webkit-text-fill-color: var(--brown3);
+}
+
+.button_down{
+    background-color: var(--brown2);
+    border-color: var(--brown2);
+    -webkit-text-fill-color: var(--green);
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 5rem;
         font-weight: bold;
         margin-bottom: 0.5em;
-    -webkit-text-fill-color: rgb(80, 129, 75);
+    -webkit-text-fill-color: var(--brown1);
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 25px;
+}
+
+.paragraph{
+    background-color:var(--blue);
+    border-radius:25px;
+    padding: 10px;
+    display:block;
+    text-align: center;
+    height: 100dvh;
+    -webkit-text-fill-color: var(--brown1);
 }
 
 #text-content {
@@ -105,7 +150,7 @@ h3{
 
 body{
     color: rgb(30, 23, 31);
-    background-color: rgb(233, 237, 230);
+    background-color: var(--brown2);
 }
 
 html,
