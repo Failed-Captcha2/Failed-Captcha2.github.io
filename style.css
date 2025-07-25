@@ -165,6 +165,29 @@ h3{
 
 }
 
+.star1{
+    position:absolute;
+    z-index: 1;
+    right:50px;
+    bottom:30px;
+    width:150px;
+}
+
+.star2{
+    position:absolute;
+    z-index: 1;
+    left: 350px;
+    top:150px;
+    width: 120px;
+}
+
+.wires{
+    width: 1200px;
+    position:absolute;
+    bottom:0px;
+    z-index: -1;
+}
+
 
 body{
     background-image: url('images/grid.png');
