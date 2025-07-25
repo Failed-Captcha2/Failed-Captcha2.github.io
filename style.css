@@ -1,13 +1,14 @@
 :root{
     --colour1: rgb(20,29,28);
     --colour2: rgb(82,97,90);
-    --colour3: rgb(104,122,122);
-    --colour4: #B5CFBF;
+    --colour3: rgb(104,122,112);
+    --colour4: white;
     --colour5: #82A6B1;
 }
 
 .large_image {
-    height: 80vh;
+    margin-top:5px;
+    height: 500px;
     width: 400px;
     object-fit: cover;
     object-position: center;
@@ -42,11 +43,27 @@
     text-align: right;
 }
 
+.links{
+    background-color:var(--colour2);
+    border-color:var(--colour1);
+    border-style:solid;
+    display:inline-flex;
+    border-width:5px;
+    border-radius:10px;
+    align-self:center;
+}
+
+.link_logo{
+    width:25px;
+    float:left;
+}
+
 .link{
     -webkit-text-fill-color: var(--colour4);
         font-weight:bold;
         text-decoration: underline;
         display: inline-block;
+        padding:5px;
 }
 
 a{
@@ -66,7 +83,7 @@ button{
 }
 
 .button_down{
-    background-color: var(--colour2);
+    background-color: var(--colour3);
     border-color: var(--colour2);
     -webkit-text-fill-color: var(--colour1);
 }
@@ -97,7 +114,7 @@ h1{
     padding: 10px;
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 290px;
     flex-grow: 1;
     text-align: center;
     -webkit-text-fill-color: var(--colour1);
@@ -151,8 +168,8 @@ h3{
 
 body{
     background-image: url('images/grid.png');
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat:repeat;
+    background-size:95%;
 }
 
 html,
