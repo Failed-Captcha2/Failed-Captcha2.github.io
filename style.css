@@ -1,7 +1,7 @@
 :root{
-    --colour1: rgb(1,0,51);
-    --colour2: rgb(49, 72, 132);
-    --colour3: rgb(60, 90, 146);
+    --colour1: rgb(20,29,28);
+    --colour2: rgb(82,97,90);
+    --colour3: rgb(104,122,122);
     --colour4: #B5CFBF;
     --colour5: #82A6B1;
 }
@@ -68,7 +68,7 @@ button{
 .button_down{
     background-color: var(--colour2);
     border-color: var(--colour2);
-    -webkit-text-fill-color: var(--colour4);
+    -webkit-text-fill-color: var(--colour1);
 }
 
 h1{
