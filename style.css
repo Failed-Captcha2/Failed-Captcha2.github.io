@@ -83,7 +83,7 @@ button{
 }
 
 .button_down{
-    background-color: var(--colour3);
+    background-color: var(--colour2);
     border-color: var(--colour2);
     -webkit-text-fill-color: var(--colour1);
 }
@@ -114,7 +114,7 @@ h1{
     padding: 10px;
     display:flex;
     flex-direction: column;
-    min-height: 290px;
+    min-height: 280px;
     flex-grow: 1;
     text-align: center;
     -webkit-text-fill-color: var(--colour1);
@@ -168,8 +168,8 @@ h3{
 .star1{
     position:absolute;
     z-index: 1;
-    right:50px;
-    bottom:30px;
+    left:900px;
+    top:500px;
     width:150px;
 }
 
@@ -184,12 +184,13 @@ h3{
 .wires{
     width: 1200px;
     position:absolute;
-    bottom:0px;
+    top:550px;
     z-index: -1;
 }
 
 
 body{
+    font-family:'Century Gothic';
     background-image: url('images/grid.png');
     background-repeat:repeat;
     background-size:95%;
