@@ -21,6 +21,10 @@
 .small_img{
     width: 95%;
     max-width: 400px;
+    border-width: 5px;
+    border-style:solid;
+    border-color:var(--colour1);
+    border-radius: 25px;
 }
 
 .project_img{
@@ -101,12 +105,14 @@ h1{
 }
 
 .header{
+    text-align:center;
     border: 5px;
     border-radius: 25px;
     border-color: var(--colour1);
     border-style:solid;
     padding:0px;
     background-color: var(--colour2);
+    max-width:800px;
 }
 
 .paragraph{
@@ -120,6 +126,12 @@ h1{
         height: auto;
         -webkit-text-fill-color: var(--colour1);
         background-color: var(--colour2);
+        font-size:16px;
+        max-width: 800px;
+}
+
+.left_align{
+    text-align: left;
 }
 
 #text-content {
@@ -183,11 +195,18 @@ h3{
 }
 
 .wires{
-    width: 1200px;
+    width: 100vw;
     position:absolute;
     top:550px;
     z-index: -1;
 }
+
+.pagebreak{
+    margin-top:20px;
+    width: 100vw;
+    margin-bottom:20px;
+}
+
 
 body{
     font-family:'Century Gothic';
@@ -195,6 +214,7 @@ body{
     background-repeat:repeat;
     background-size:95%;
     cursor:grab;
+    overflow-x:hidden;
 }
 
 html,
