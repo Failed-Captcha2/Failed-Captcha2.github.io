@@ -43,6 +43,8 @@
 }
 
 .tabs{
+    padding:0;
+    margin:0;
     float: right;
     text-align: right;
 }
@@ -73,7 +75,7 @@
         font-weight:bold;
         text-decoration: underline;
         display: inline-block;
-        padding:1dvh;
+        padding:0dvh;
         cursor:grabbing;
 }
 
@@ -125,6 +127,7 @@ h1{
     padding-top:0;
     padding-bottom:0;
     margin:3dvh;
+    -webkit-text-fill-color: var(--colour4);
 }
 
 .paragraph{
