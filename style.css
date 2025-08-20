@@ -19,12 +19,13 @@
 }
 
 .small_img{
-    width: 95%;
-    max-width: 400px;
-    border-width: 5px;
+    max-width: 30dvw;
+    border-width: 1dvh;
     border-style:solid;
     border-color:var(--colour1);
-    border-radius: 25px;
+    border-radius: 3dvh;
+    margin: 0;
+    margin-top:1dvh;
 }
 
 .project_img{
@@ -105,7 +106,7 @@ button{
     -webkit-text-fill-color: var(--colour1);
 }
 
-h1{
+h1,h2{
     font-size: 10dvh;
         font-weight: bold;
         margin:0px;
@@ -113,6 +114,11 @@ h1{
     text-align: center;
     
 }
+
+h2{
+    font-size: 4dvh;
+}
+
 
 .header{
     text-align:center;
@@ -126,7 +132,7 @@ h1{
     padding:1dvh;
     padding-top:0;
     padding-bottom:0;
-    margin:3dvh;
+    margin:0px;
     -webkit-text-fill-color: var(--colour4);
 }
 
@@ -182,6 +188,7 @@ h1{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding:0;
 }
 
 .text>* {
