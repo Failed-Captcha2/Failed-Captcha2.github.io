@@ -1,7 +1,7 @@
 :root{
     --colour1: rgb(20,29,28);
     --colour2: rgb(44, 54, 49);
-    --colour3: rgb(82,97,90);
+    --colour3: rgb(86,102,90);
     --colour4: rgb(234, 245, 226);
     --colour5: rgb(174, 177, 130);
 }
@@ -103,7 +103,10 @@ button{
 .button_down{
     background-color: var(--colour3);
     border-color: var(--colour3);
+    border-bottom: 5vh;
     -webkit-text-fill-color: var(--colour1);
+    background-image:url("images/grid.png");
+    background-size: 100dvh;
 }
 
 h1,h2{
@@ -235,7 +238,7 @@ body{
     font-family:'Century Gothic';
     background-image: url('images/grid.png');
     background-repeat:repeat;
-    background-size:150dvh;
+    background-size:100dvh;
     cursor:grab;
     overflow-x:hidden;
 }
