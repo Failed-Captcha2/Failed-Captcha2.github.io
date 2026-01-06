@@ -1,7 +1,7 @@
 :root {
     --darkblue:#171450;
     --darkgreen: #015836;
-    --green:#2EAC56;
+    --green:#2eac41;
     --grass:#B4E03B;
     --lime:#EEFF00;
     --blue:#0D649D;
@@ -100,10 +100,14 @@ flex-direction:row;
     font-size: 2dvh;
 }
 
-a{
+.link{
     -webkit-text-fill-color: var(--lime);
     align-self:center;
-    font-size: 2dvh;
+    background-color:var(--darkblue);
+    white-space:nowrap;
+    font-size:2cqi;
+    animation:wavelink 10s linear infinite;
+    position:absolute;
 }
 
 .wave{
@@ -119,8 +123,30 @@ a{
     padding-left:1dvw;
     padding-right: 1dvw;
     -webkit-text-fill-color: var(--lime);
+    width: 15vw;
+    background-size:contain;
+    background-repeat:repeat-x;
+    animation: waveAnimation 2s linear infinite;
+    /* overflow:hidden; */
+
 }
 
 .hinge{
     position:fixed;
 }
+
+@keyframes waveAnimation {
+        from{
+            background-position-x: 24% }
+        to{
+            background-position-x: 0%; }
+    }
+
+    @keyframes wavelink{
+        from{
+            transform: translateX(50%);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }

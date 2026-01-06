@@ -16,9 +16,10 @@ email.addEventListener("mouseenter", () => showlink(email, "mailto:crowe.elshoba
 email.addEventListener("mouseleave", () => showwave(email));
 
 function showlink(link, url){
-    link.innerHTML = "<a href='" + url + "'>" + url + "</a>";
+    link.innerHTML = "<a class='link' href='" + url + "'>" + url + "</a><a class='link' href='" + url + "'>" + url + url + "</a>";
 }
 
 function showwave(link) {
-    link.innerHTML = "<p>~~~~~~~~~~~~~~~~~~~~~</p>";
+    link.innerHTML = "";
+    link.style.backgroundImage = "url(images/sine.png)";
 }
