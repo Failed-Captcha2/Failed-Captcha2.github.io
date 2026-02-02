@@ -1,6 +1,9 @@
 // links 
 
 const github = document.getElementById("github");
+const waveScale = github.style.backgroundSize;
+console.log(waveScale);
+
 showwave(github);
 github.addEventListener("mouseenter", () => showlink(github, "https://github.com/Failed-Captcha2"));
 github.addEventListener("mouseleave", () => showwave(github));
@@ -16,7 +19,8 @@ email.addEventListener("mouseenter", () => showlink(email, "mailto:crowe.elshoba
 email.addEventListener("mouseleave", () => showwave(email));
 
 function showlink(link, url){
-    link.innerHTML = "<a class='link' href='" + url + "'>" + url + "</a><a class='link' href='" + url + "'>" + url + url + "</a>";
+    link.innerHTML = "<a class='link' href='" + url + "'>" + url.replace("https://", "").replace("www.","").replace("mailto:", "") + "</a>";
+    
 }
 
 function showwave(link) {
