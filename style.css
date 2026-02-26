@@ -83,7 +83,18 @@ flex-direction:row;
     border-color:black;
     border-width:0.5dvh;
     border-style:solid;
+}
+
+.bio{
+    border-style:solid;
+    border-width:0.5dvh;
+    border-color:var(--blue);
+    margin:1dvh;
+    margin-left:0px;
+    padding:1dvh;
     background-color:var(--grass);
+    align-self:center;
+    height: 26dvh;
 }
 
 .window {
@@ -103,10 +114,14 @@ flex-direction:row;
 }
 
 .portrait{
-    height: 30dvh;
+    height: 28dvh;
     display:block;
     float:left;
-
+    background-color:var(--green);
+    margin:1dvh;
+    border-style:solid;
+    border-width:0.5dvh;
+    border-color:var(--lime);
 }
 
 .link_label {
