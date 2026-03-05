@@ -27,6 +27,8 @@ body {
 h1{
     font-size: 4dvh;
     font-weight: 400;
+    margin-top: 0.5dvh;
+        margin-bottom: 0.5dvh;
 }
 
 p{
@@ -50,12 +52,13 @@ a{
     background-color: transparent;
     border-style:ridge;
     border-color: var(--green);
+    display: flex;
     
 }
 
 .box{
-    padding-right: 1%;
-    padding-left: 1%;
+    padding-right: 1dvh;
+    padding-left: 1dvh;
     background-color: var(--green);
     position:relative;
     top:0;
@@ -67,7 +70,7 @@ a{
     border-bottom-color:var(--grass);
     border-left-color: var(--darkgreen);
     border-right-color: var(--darkgreen);
-    margin: 0.5%;
+    margin: 0.5dvh;
     flex: 1;
 }
 
@@ -75,6 +78,12 @@ a{
 flex:1; 
 display:flex; 
 flex-direction:row;
+}
+
+.coldiv{
+    flex:1;
+    display:flex;
+    flex-direction:column;
 }
 
 .content{
@@ -94,7 +103,7 @@ flex-direction:row;
     padding:1dvh;
     background-color:var(--grass);
     align-self:center;
-    height: 26dvh;
+    height: 22dvh;
 }
 
 .window {
@@ -113,8 +122,21 @@ flex-direction:row;
     border-style: solid;
 }
 
+.screen{
+    border-style:solid;
+    border-color:var(--blue);
+    border-radius:2%;
+    margin-top:2dvh;
+    margin-bottom:2dvh;
+    margin-right:0px;
+    margin-left:0px;
+    border-radius:2dvw;
+    flex:1;
+}
+    
+
 .portrait{
-    height: 28dvh;
+    height: 24dvh;
     display:block;
     float:left;
     background-color:var(--green);
@@ -126,7 +148,7 @@ flex-direction:row;
 
 .link_label {
     -webkit-text-fill-color:var(--lime);
-    font-size: 3dvh;
+    font-size: 2dvh;
     
 }
 
@@ -135,7 +157,7 @@ flex-direction:row;
     align-self:center;
     background-color:var(--darkblue);
     white-space:nowrap;
-    font-size:2dvh;
+    font-size:3dvh;
     animation:wavelink linear infinite;
 
     font-family: "Doto", sans-serif;
@@ -166,19 +188,40 @@ flex-direction:row;
 }
 
 #github > a{
-    animation-duration: 4.92s;
+    animation-duration: 5.7s;
 }
 
 #linkedin > a{
-    animation-duration: 5s;
+    animation-duration: 9s;
 }
 
 #email > a{
-    animation-duration: 5s;
+    animation-duration: 6.5s;
 }
 
 .hinge{
     position:fixed;
+}
+
+.screwout {
+    position: fixed;
+    align-self:center;
+    width: 0.6dvh;
+    height: 0.6dvh;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 0.4dvh;
+    border-color: var(--darkblue);
+}
+.screwin{
+    position:fixed;
+    width:0.5dvh;
+    height:0.5dvh;
+    border-radius: 100%;
+    border-style:dashed;
+    border-width:0.4dvh;
+    border-color:var(--blue);
+    background-color:var(--darkblue);
 }
 
 @keyframes waveAnimation {
