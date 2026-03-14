@@ -32,7 +32,7 @@ h1{
 }
 
 p{
-    font-size: 3dvh;
+    font-size: 1.5dvw;;
     margin-top: 0.5dvh;
     margin-bottom: 0.5dvh;
 }
@@ -71,6 +71,8 @@ a{
     border-left-color: var(--darkgreen);
     border-right-color: var(--darkgreen);
     margin: 0.5dvh;
+    display:flex;
+    flex-direction:row;
     flex: 1;
 }
 
@@ -126,12 +128,17 @@ flex-direction:row;
     border-style:solid;
     border-color:var(--blue);
     border-radius:2%;
-    margin-top:2dvh;
-    margin-bottom:2dvh;
+    margin-top:1dvh;
+    margin-bottom:1dvh;
     margin-right:0px;
     margin-left:0px;
     border-radius:2dvw;
+    padding:2%;
+    padding-top:0;
+    padding-bottom:0;
     flex:1;
+    font-family: "Doto", sans-serif;
+    -webkit-text-fill-color: var(--skyblue);
 }
     
 
@@ -164,6 +171,53 @@ flex-direction:row;
     font-weight: 200;
     text-decoration-style:dotted;
     text-decoration-thickness:0.01dvh;
+}
+
+.wire_panel{
+    border-style:solid;
+    border-width:0.5dvh;
+    border-color:black;
+    margin:1dvh;
+    padding:1dvh;
+    background-color:var(--lime);
+    display:flex;
+    align-content: center;
+    padding-top: 0;
+        padding-bottom: 0;
+}
+
+.wire_slot{
+    align-self:center;
+    min-width: 6dvh;
+    background-image:linear-gradient(to right, var(--green)50%, var(--darkgreen)50%);
+    height: 3dvh;
+    border-style:solid;
+    border-width:0.5dvh;
+    border-color:black;
+    align-self:center;
+    border-left-style: outset;
+    border-left-width:1.2dvh;
+    border-left-color:var(--grass);
+    font-family: Jersey 10, sans-serif;
+    font-size: 3dvh;
+    text-align: center;
+
+    
+}
+
+input:checked + .wire_slot{
+     background-image:linear-gradient(to right, var(--grass)50%, var(--green)50%);;
+    background-color:var(--green);
+    border-left-width: 0.5dvh;
+    border-left-color: black;
+    border-left-style: solid;
+    border-right-width: 1.2dvh;
+    border-right-color: var(--grass);
+    border-right-style: outset;
+}
+
+input:hover+.wire_slot {
+    background-image: radial-gradient(circle, var(--lime), var(--green));
 }
 
 .wave{
@@ -204,7 +258,7 @@ flex-direction:row;
 }
 
 .screwout {
-    position: fixed;
+    position: absolute;
     align-self:center;
     width: 0.6dvh;
     height: 0.6dvh;
@@ -214,7 +268,7 @@ flex-direction:row;
     border-color: var(--darkblue);
 }
 .screwin{
-    position:fixed;
+    position:absolute;
     width:0.5dvh;
     height:0.5dvh;
     border-radius: 100%;
