@@ -69,7 +69,7 @@ function checkTypes(project) {
     //checks types in given projects at index 1+ (because index 0 is used for project name)
     for (let j = 1; j < project.length; j++) {
         //return true if any type within the project is NOT being filtered out
-        if (!document.getElementsByName("filter-" + types[j])[0].checked) {
+        if (!document.getElementsByName("filter-" + project[j])[0].checked) {
             return true;
         }
     }
@@ -88,7 +88,8 @@ function displayProject(project) {
 
     if (project == "WEBSITE") {
         document.getElementById("project-description").innerHTML =
-            `work in progress
+            `personal project
+            <br> in progress
             <br>
             <br> this website was built using HTML, CSS, and JavaScript
             <br> design concept was made by the talented <a href="https://torn-shorts.github.io//">torn shorts</a>.`;
