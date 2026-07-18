@@ -40,7 +40,7 @@ p{
 }
 
 a{
-    -webkit-text-fill-color: var(--darkgreen);
+    -webkit-text-fill-color: var(--lime);
     text-decoration: underline;
 }
 

@@ -99,6 +99,14 @@ function displayProject(projectNum) {
             <br>
             <br>
             In position view mode, the 4 left-most leds display y and x radial position. Pressing the bottom button “normalizes” the position by setting the current position to 0,0. Pressing the top button displays the stored password only if the position is that of the storage position set in password set mode.
- `
+            <br>
+            <br>
+            <a href="https://drive.google.com/file/d/11zxhwW6TINa2DT7RK2FR4h-nHS9iVlN7/view">Video Demonstration</a>
+            <br>
+            <a href=https://drive.google.com/file/d/1Da8RKR-INKUIdCeaMTy8vhf3X1jBhPkm/view?usp=sharing">Original/Modified Verilog code</a>
+            <br>
+            <a href="https://www.intel.com/content/www/us/en/design-example/714719/intel-max-10-fpga-g-sensor-de10-lite-board-design-example.html">Sources</a>
+
+            `
     }
 }
