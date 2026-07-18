@@ -42,6 +42,34 @@ a{
     text-decoration: underline;
 }
 
+button{
+    margin:1dvh;
+    flex: 1;
+    background-color:transparent;
+        border-color: var(--skyblue);
+        border-width: 0.5dvh;
+        border-style: inset;
+    -webkit-text-fill-color: var(--skyblue);
+    font-family: "Jersey 10", sans-serif;
+    font-size: 4dvh;
+    position:relative;
+}
+
+input:hover+.navigation{
+    border-color:black;
+    border-style:outset;
+}
+
+.indicator{
+    position:absolute;
+    top:10%;
+    right:5%;
+    border-radius:50%;
+    width:1dvh;
+    height:1dvh;
+    background-color:white;
+}
+
 .border{
     position:fixed;
     top:0;
@@ -203,6 +231,15 @@ flex-direction:row;
     text-align: center;
 
     
+}
+
+.vent_opening{
+    align-self:center;
+    background-color:black;
+    height: 5dvh;
+    margin: 0.5dvh;
+    display:flex;
+    flex:1;
 }
 
 input:checked + .wire_slot{
