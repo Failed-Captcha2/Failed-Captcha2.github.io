@@ -16,6 +16,8 @@ body {
     background-size:0.5%;
 
     font-family: "Jersey 10", sans-serif;
+
+    caret-color:#EEFF00;
 }
 
 html,
@@ -42,7 +44,9 @@ a{
     text-decoration: underline;
 }
 
-button{
+.navigation{
+    padding: 1dvh;
+    text-align:center;
     margin:1dvh;
     flex: 1;
     background-color:transparent;
@@ -55,8 +59,9 @@ button{
     position:relative;
 }
 
-input:hover+.navigation{
+.navigation:hover{
     border-color:black;
+    -webkit-text-fill-color: black;
     border-style:outset;
 }
 
@@ -68,6 +73,10 @@ input:hover+.navigation{
     width:1dvh;
     height:1dvh;
     background-color:white;
+}
+
+input:checked + .indicator{
+ background-color:black;
 }
 
 .border{
@@ -153,14 +162,15 @@ flex-direction:row;
 }
 
 .screen{
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: var(--darkblue) var(--blue);
     border-style:solid;
     border-color:var(--blue);
-    border-radius:2%;
     margin-top:1dvh;
     margin-bottom:1dvh;
     margin-right:0px;
     margin-left:0px;
-    border-radius:2dvw;
     padding:2%;
     padding-top:0;
     padding-bottom:0;
@@ -277,6 +287,7 @@ input:hover+.wire_slot {
     overflow:hidden;
 
 }
+
 
 #github > a{
     animation-duration: 5.7s;
