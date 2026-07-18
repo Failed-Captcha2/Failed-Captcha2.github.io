@@ -1,7 +1,7 @@
 // ----------------------------------LINKS -------------------------------------------------------------------------
 const github = document.getElementById("github");
 const waveScale = github.style.backgroundSize;
-console.log(waveScale);
+// console.log(waveScale);
 
 showwave(github);
 github.addEventListener("mouseenter", () => showlink(github, "https://github.com/Failed-Captcha2"));
@@ -29,35 +29,46 @@ function showwave(link) {
 
 //------------------------------PROJECTS-------------------------------------------------------------------------
 
-//project types: [hardware, software, research]
-var projectTypes = [[], ["software"], ["hardware","software"]];
+//projects = NAME, types(research,hardware,software)
+var projects = [["PROJECTS"],
+                        ["WEBSITE", "software"],
+                        ["RF POWER SENSOR & MATCHED NETWORK BOARD","hardware"],
+                        ["DIRECTIONAL PASSWORD STORAGE", "hardware", "software"],
+                        ["SMES RESEARCH", "research"],
+                        ["CUSTOM CPU","software"]];
 var projectNum = 0;
 
 function scrollProjects(direction) {
 
+    //scroll to next valid project; dont scroll if at end of list
     if (direction == 1) {
-        for (i = projectNum + 1; i < projectTypes.length; i++) {
-            if (checkTypes(projectTypes[i])) {
+        for (i = projectNum + 1; i < projects.length; i++) {
+            if (checkTypes(projects[i])) {
                 projectNum = i;
                 break;
             }
         }
     } else{
         for (i = projectNum - 1; i >= 0; i--) {
-            if (i==0 ||checkTypes(projectTypes[i])) {
+            if (i==0 ||checkTypes(projects[i])) {
                 projectNum = i;
                 break;
             }
         }
     }
 
-    console.log(projectNum);
+    // console.log(projects[projectNum][0]);
 
-    displayProject(projectNum);
+    //show project name
+    document.getElementById("project-name").innerHTML = projects[projectNum][0];
+    //show project description
+    displayProject(projects[projectNum][0]);
 }
 
-function checkTypes(types) {
-    for (let j = 0; j < types.length; j++) {
+function checkTypes(project) {
+    //checks types in given projects at index 1+ (because index 0 is used for project name)
+    for (let j = 1; j < project.length; j++) {
+        //return true if any type within the project is NOT being filtered out
         if (!document.getElementsByName("filter-" + types[j])[0].checked) {
             return true;
         }
@@ -65,9 +76,8 @@ function checkTypes(types) {
     return false;
 }
 
-function displayProject(projectNum) {
-    if (projectNum == 0) {
-        document.getElementById("project-name").innerHTML = "PROJECTS";
+function displayProject(project) {
+    if (project == "PROJECTS") {
 
         document.getElementById("project-description").innerHTML =
             `project navigation -------- >
@@ -76,8 +86,7 @@ function displayProject(projectNum) {
         <br> click [ ] to view projects in new window`;
     }
 
-    if (projectNum == 1) {
-        document.getElementById("project-name").innerHTML = "WEBSITE";
+    if (project == "WEBSITE") {
         document.getElementById("project-description").innerHTML =
             `work in progress
             <br>
@@ -85,8 +94,7 @@ function displayProject(projectNum) {
             <br> design concept was made by the talented <a href="https://torn-shorts.github.io//">torn shorts</a>.`;
     }
 
-    if (projectNum == 2) {
-        document.getElementById("project-name").innerHTML = "DIRECTIONAL PASSWORD STORAGE";
+    if (project == "DIRECTIONAL PASSWORD STORAGE") {
         document.getElementById("project-description").innerHTML =
             `March 2026
             <br> Digital Logic Design Course Project
@@ -107,6 +115,42 @@ function displayProject(projectNum) {
             <br>
             <a href="https://www.intel.com/content/www/us/en/design-example/714719/intel-max-10-fpga-g-sensor-de10-lite-board-design-example.html">Sources</a>
 
+            `
+    }
+
+    if (project =="RF POWER SENSOR & MATCHED NETWORK BOARD") {
+        document.getElementById("project-description").innerHTML =
+            `March 2026
+            <br> Applied Electromagnetism Course Project
+            <br>
+            <br> calculated stub and quarter wave matching network parameters
+            <br> designed schematic and PCB board on KiCad
+            <br> Assembled board and tested functionality with VNA
+
+            `
+    }
+
+    if (project =="SMES RESEARCH") {
+        document.getElementById("project-description").innerHTML =
+            `March 2025
+            <br>
+            Effective Engineering Communication Course Project
+            <br>
+            <br>
+            This report explores the prospects of SMES technology as a solution for addressing the challenges associated with large scale renewable energy usage, more specifically it covers how the properties of SMES make it a promising solution for regulating the fluctuations in energy supply and demand. As the use of renewable energy sources become more prevalent the demand for a more effective energy storage solution, is becoming more prevalent. The purpose of this report is to propose integration of SMES as a solution to this demand. This study was conducted through compiling the most up-to-date research on the subject available. Information is collected from credible sources written in 2022 or more recently and analyzed through thorough review and cross-referencing of details. The analysis indicates that although the benefits of SMES make it a promising solution, there are still challenges involved that require more research that needs to be made before the widespread integration of SMES can be accomplished. Based on the findings, I propose more focus be made on the integration of hybrid energy storage methods involving the use of SMES technology.
+            <br>
+            <br>
+            <a href="https://docs.google.com/document/d/1mhISlZ6ep3tjYi_Aj1pMZklAzQQ5cwhITCqdLG56I4E/edit?usp=sharing">Full Report</a>
+            `
+    }
+
+    if (project=="CUSTOM CPU DESIGN") {
+        document.getElementById("project-description").innerHTML =
+            `February 2025
+            <br>Embedded Systems Course Project
+            <br>
+            <br>Developed a 5-stage pipelined CPU in Verilog based on RISC-V instruction set
+            <br>Implemented instruction decoding, hazard detection, and memory I/O
             `
     }
 }
