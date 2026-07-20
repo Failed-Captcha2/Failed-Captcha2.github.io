@@ -34,12 +34,12 @@
                             <div id="email" class="wave"></div>
                         </div>
 
-                        <div class="content" style="border-left-style:none;padding:0px; background-color:var(--green);">
+                        <div class="content" style="padding:0px; background-color:var(--green);">
                             <img class="portrait" src="images/portrait.png" alt="portrait">
                         </div>
 
                         <div class="content"
-                            style="border-left-style:none; padding-left:1dvh;border-top-right-radius:1dvh;border-bottom-right-radius:1dvh">
+                            style="padding-left:1dvh;border-top-right-radius:1dvh;border-bottom-right-radius:1dvh">
 
                             <div class="bio">
                                 <h1>Corey Elshobary</h1>
@@ -95,7 +95,7 @@
 
                         <div class="box">
                             <div class="wire_panel">
-                                <input type="checkbox"
+                                <input type="checkbox"  id="coursesCheckBox" onclick="togglePopUp('courses')"
                                     style="position:absolute; align-self:center;left:20%; transform:scale(5,3); opacity:0;">
                                 <label class="wire_slot">
                                     1 | 0
@@ -120,7 +120,7 @@
 
                         <div class="box">
                             <div class="wire_panel">
-                                <input type="checkbox"
+                                <input type="checkbox"  id="updatesCheckBox" onclick="togglePopUp('updates')"
                                     style="position:absolute; align-self:center;left:20%; transform:scale(5,3); opacity:0;">
                                 <label class="wire_slot">
                                     1 | 0
@@ -222,9 +222,31 @@
 
     <!-- POP UP WINDOWS -->
 
-    <div id="skills" name="skills">
-        <div id="skillsheader">Click here to move</div>
+    <div id="skills" class="popup">
+        <div id="skillsheader" class="popupheader">+Skills</div>
+        <div class ="popupbody">
+        <b style="display:block; margin:0;background-color:var(--skyblue); color:var(--darkblue);"> Programming</b>
+        Python<br>R<br>C/C++<br>C#<br> Java<br>Matlab<br> Bash<br> Assembly<br> HTML<br>CSS<br>JavaScript
+        <br><br>
+        <b style="display:block; margin:0;background-color:var(--skyblue); color:var(--darkblue);">Tools and Software</b>
+        Cadence<br> KiCad<br> Altium<br>SolidWorks<br>AutoCAD<br>MATLAB<br> RStudio
+        <br><br>
+        <b style="display:block; margin:0;background-color:var(--skyblue); color:var(--darkblue);">Hardware</b>
+        Soldering<br>PCB assembly<br> Hardware testing<br> CNC<br> Lathe
+        <br><br>
+        <b style="display:block; margin:0;background-color:var(--skyblue); color:var(--darkblue);">General Skills</b>
+        Team Collaboration<br>Verbal Communication<br>Planning<br>Customer Service
+        </div>
+    </div>
 
+    <div id="courses" class="popup">
+        <div id="coursesheader" class="popupheader">+Courses</div>
+        <div class="popupbody"></div>
+    </div>
+
+    <div id="updates" class="popup">
+        <div id="updatesheader" class="popupheader">+Updates</div>
+        <div class="popupbody"></div>
     </div>
 
 

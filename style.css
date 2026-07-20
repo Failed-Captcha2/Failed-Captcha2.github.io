@@ -343,19 +343,47 @@ input:hover+.wire_slot {
     }
 }
 
-#skills{
+.popup{
     display:none;
     position: absolute;
         z-index: 9;
-        background-color: #f1f1f1;
-        border: 1px solid #d3d3d3;
+        background-color: none;
         text-align: center;
+        left:20dvw;
+        top:50dvh;
 }
 
-#skillsheader {
-    padding: 10px;
+.popupheader {
+    max-width:min-content;
+    text-align:left;
+    padding: 1dvh;
+    padding-bottom:0;
+    padding-top:0;
+    padding-right:2dvw;
     cursor: move;
     z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
+    background-color: var(--grass);
+    font-size:3dvh;
+    color: black;
+    border-top-left-radius:1dvh;
+    border-top-right-radius:1dvh;
+}
+
+.popupbody{
+    background-color:var(--darkblue);
+    padding: 1dvh;
+    text-align:left;
+    border-color: var(--grass);
+    border-width:0.5dvh;
+    border-style:solid;
+    border-radius:1dvh;
+    border-top-left-radius: 0;
+    color:var(--skyblue);
+
+    font-family: "Doto", sans-serif;
+
+    min-width:20dvw;
+    max-height:30dvh;
+    overflow-y: auto;
+        scrollbar-color: var(--darkblue) var(--grass);
 }
