@@ -35,7 +35,7 @@ var projects = [["PROJECTS"],
                         ["RF POWER SENSOR & MATCHED NETWORK BOARD","hardware"],
                         ["DIRECTIONAL PASSWORD STORAGE", "hardware", "software"],
                         ["SMES RESEARCH", "research"],
-                        ["CUSTOM CPU","software"]];
+                        ["CUSTOM CPU DESIGN","software"]];
 var projectNum = 0;
 
 function scrollProjects(direction) {
@@ -88,8 +88,8 @@ function displayProject(project) {
 
     if (project == "WEBSITE") {
         document.getElementById("project-description").innerHTML =
-            `personal project
-            <br> in progress
+            `present
+            <br> personal project
             <br>
             <br> this website was built using HTML, CSS, and JavaScript
             <br> design concept was made by the talented <a href="https://torn-shorts.github.io//">torn shorts</a>.`;
