@@ -350,7 +350,7 @@ input:hover+.wire_slot {
         background-color: none;
         text-align: center;
         left:20dvw;
-        top:50dvh;
+        top:30dvh;
 }
 
 .popupheader {
@@ -362,11 +362,16 @@ input:hover+.wire_slot {
     padding-right:2dvw;
     cursor: move;
     z-index: 10;
-    background-color: var(--grass);
+    background-color: var(--lime);
     font-size:3dvh;
     color: black;
     border-top-left-radius:1dvh;
     border-top-right-radius:1dvh;
+    border-style: solid;
+    border-bottom-style:none;
+    
+    border-width:0.5dvh;
+    border-color:var(--grass);
 }
 
 .popupbody{
@@ -378,12 +383,16 @@ input:hover+.wire_slot {
     border-style:solid;
     border-radius:1dvh;
     border-top-left-radius: 0;
+    border-top-width:1dvh;
+    border-bottom-width:1dvh;
     color:var(--skyblue);
 
     font-family: "Doto", sans-serif;
 
-    min-width:20dvw;
-    max-height:30dvh;
+    min-width:min-content;
+    width:20dvw;
+    height:50dvh;
     overflow-y: auto;
-        scrollbar-color: var(--darkblue) var(--grass);
+    resize:both;
+    scrollbar-color: var(--darkblue) var(--grass);
 }
