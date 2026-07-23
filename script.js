@@ -76,6 +76,20 @@ function checkTypes(project) {
     return false;
 }
 
+function projectLink(project) {
+    console.log("link clicked");
+    
+    for (let i = 0; i < projects.length; i++){
+        console.log(projects[i][0]);
+        if (projects[i][0] === project) {
+            projectNum = i;
+            document.getElementById("project-name").innerHTML = project;
+            displayProject(project);
+            return;
+        }
+    }
+}
+
 function displayProject(project) {
     if (project == "PROJECTS") {
 

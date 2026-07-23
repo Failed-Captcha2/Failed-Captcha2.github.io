@@ -42,6 +42,7 @@ p{
 a{
     -webkit-text-fill-color: var(--lime);
     text-decoration: underline;
+    cursor:pointer;
 }
 
 .navigation{
@@ -349,7 +350,6 @@ input:hover+.wire_slot {
         z-index: 9;
         background-color: none;
         text-align: center;
-        left:20dvw;
         top:30dvh;
 }
 
