@@ -45,6 +45,12 @@ a{
     cursor:pointer;
 }
 
+img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
 .navigation{
     padding: 1dvh;
     text-align:center;
